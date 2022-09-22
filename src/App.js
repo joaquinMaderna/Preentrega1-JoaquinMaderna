@@ -5,8 +5,12 @@ import ItemListContainer from './Component/ItemListContainer/ItenListContainer'
 function App() {
   return (
     <body>
-      <Navbar />
-      <ItemListContainer greeting={"Bienvenido"}/>
+      <div>
+        <Navbar />
+      </div>
+      <div class="bienvenida">
+      <ItemListContainer greeting={"Nuestros Productos"}/>
+      </div>
     </body>
   );
 }

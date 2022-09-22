@@ -2,15 +2,17 @@ import './Navbar.css'
 import CartWidget from '../CarWidget/CartWidget'
 const Navbar = () => {
     return(
-        <nav style={{display:"flex", justifyContent:"space-around" }}>
+        <nav class="navbar">
             <div>
-                <h1>Ecommerce</h1>
+                <h1>Autopartes Norte</h1>
             </div>
             <div>
-                <button>Celulares</button>
-                <button>Notebooks</button>
-                <button>Tablets</button>
-                <button>Computadoras</button>
+                <ul>
+                    <li><a href="#">Limpieza</a></li>
+                    <li><a href="#">Accesorios</a></li>
+                    <li><a href="#">Cubiertas</a></li>
+                    <li><a href="#">Repuestos</a></li>
+                </ul>
             </div>
             <div>
                 <CartWidget/>

@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #C2C3CF;
+    width: 100%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button {
+    margin: 0 10px;
+    font-size: 15px;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+.navbar ul li::before{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.4s ease-out;
+}
+.navbar ul li:hover::before{
+    width: 100%;
+}
